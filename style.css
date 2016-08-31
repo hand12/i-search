@@ -1,0 +1,20 @@
+.loading img{padding:5px; }
+#keyword {
+  width: 50%;
+  margin: 20px auto;
+}
+
+#list {
+  padding: 0;
+  margin: 0 auto;
+  width: 50%;
+  list-style: none;
+}
+
+li {
+  border-radius: 5px;
+  box-shadow: 0.5px 0.5px 1px 1px rgba(0,0,0,0.1) inset;
+  background-color: #eee;
+  margin: 10px;
+  padding: 10px;
+}
