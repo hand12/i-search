@@ -3,10 +3,19 @@ var data = ['apple','apricot','avocado','banana','bilberry','blackberry','blackc
 var list = $('#list');
 $('#submit').on('click', function(){
   var input = $.trim($('#keyword').val());
-  // console.log(input);
+
+  //完全一致
   var hit_data = data.filter(function(d){
     return (d === input);
   });
+
+  //前方一致
+  var reg = new RegExp("^" + input);
+  var hit_data = data.filter(function(d){
+    return (d.match(reg));
+  });
+
+
   if (hit_data.length === 0){
     list.append('<li>ヒットしませんでした。</li>');
   } else {
