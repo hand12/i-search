@@ -1,4 +1,4 @@
-/*
+
 var data = ['apple','apricot','avocado','banana','bilberry','blackberry','blackcurrant','blueberry','boysenberry','cantaloupe','currant','cherry','cherimoya','cloudberry','coconut','cranberry','damson','date','dragonfruit','durian','elderberry','feijoa','fig','goji berry','gooseberry','grape','raisin','grapefruit','guava','huckleberry','jabuticaba','jackfruit','jambul','jujube','juniper berry','kiwi fruit','kumquat','lemon','lime','loquat','lychee','mango','marion berry','melon','cantaloupe','honeydew','watermelon','miracle fruit','mulberry','nectarine','olive','orange','blood orange','clementine','mandarine','tangerine','papaya','passionfruit','peach','pear','persimmon','physalis','plum/prune','pineapple','pomegranate','pomelo','purple mangosteen','quince','raspberry','salmonberry','rambutan','redcurrant','salal berry','salak','satsuma','star fruit','strawberry','tamarillo','tamarind','ugli fruit'];
 var keyupStack = [];
 $('#keyword').on('keyup', function () {//keyupはキーがおされ上がった瞬間に実行される。
@@ -46,4 +46,3 @@ var createNoHitsRow = function (){
 
 // 初期表示
 createRow(data);
-*/
