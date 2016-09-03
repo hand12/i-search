@@ -2,15 +2,23 @@ var data = ['apple','apricot','avocado','banana','bilberry','blackberry','blackc
 
 var list = $('#list');
 $('#submit').on('click', function(){
-  var input = $.trim($('#keyword').val());
+  var input = $('#keyword').val();
 
   //完全一致
-  var hit_data = data.filter(function(d){
-    return (d === input);
-  });
+  // var hit_data = data.filter(function(d){
+  //   return (d === input);
+  // });
 
   //前方一致
-  var reg = new RegExp("^" + input);
+  // var reg = new RegExp("^" + input);
+  // var hit_data = data.filter(function(d){
+  //   return (d.match(reg));
+  // });
+
+  //複数一致
+  var s_words = input.split(" ");
+  var reg = new RegExp(s_words.join('|'));
+  console.log(reg);
   var hit_data = data.filter(function(d){
     return (d.match(reg));
   });
