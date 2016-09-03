@@ -1,6 +1,14 @@
-/*
 var data = ['apple','apricot','avocado','banana','bilberry','blackberry','blackcurrant','blueberry','boysenberry','cantaloupe','currant','cherry','cherimoya','cloudberry','coconut','cranberry','damson','date','dragonfruit','durian','elderberry','feijoa','fig','goji berry','gooseberry','grape','raisin','grapefruit','guava','huckleberry','jabuticaba','jackfruit','jambul','jujube','juniper berry','kiwi fruit','kumquat','lemon','lime','loquat','lychee','mango','marion berry','melon','cantaloupe','honeydew','watermelon','miracle fruit','mulberry','nectarine','olive','orange','blood orange','clementine','mandarine','tangerine','papaya','passionfruit','peach','pear','persimmon','physalis','plum/prune','pineapple','pomegranate','pomelo','purple mangosteen','quince','raspberry','salmonberry','rambutan','redcurrant','salal berry','salak','satsuma','star fruit','strawberry','tamarillo','tamarind','ugli fruit'];
-var keyupStack = [];
+
+$('#submit').on('click', function(){
+  var text = $('#keyword').val();
+  console.log(text);
+});
+
+
+
+
+/*
 $('#keyword').on('keyup', function () {//keyupはキーがおされ上がった瞬間に実行される。
   keyupStack.push(1);//入力されている文字数。何か入力されていれば配列に1が入る。
   setTimeout(function () {

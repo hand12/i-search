@@ -1,7 +1,13 @@
 .loading img{padding:5px; }
 #keyword {
+  display: inline;
   width: 50%;
-  margin: 20px auto;
+}
+#submit {
+  display: inline;
+  background-color: #6495ed;
+  color: #fff;
+  padding: 6px 20px;
 }
 
 #list {
@@ -17,4 +23,10 @@ li {
   background-color: #eee;
   margin: 10px;
   padding: 10px;
+}
+
+.form-group {
+  width: 75%;
+  margin: 20px auto;
+  text-align: center;
 }
